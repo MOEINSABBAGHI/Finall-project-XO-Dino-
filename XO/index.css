@@ -1,0 +1,58 @@
+#XO-game {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0px 0px;
+}
+
+#XO-game img {
+    display: block;
+    width: 80%;
+    height: 80%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+#XO-game table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#XO-game td {
+    width: 33%;
+    height: 33%;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 32px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background 0.3s;
+}
+
+#XO-game td img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+#XO-game td.disabled {
+    pointer-events: none;
+    background-color: #eee;
+}
+button {
+    margin: auto;
+    display: flex;
+    padding: 30px 20px;
+    font-size: large;
+    background-color: rgb(4, 0, 255);
+    color: aliceblue;
+    border-radius: 8px;
+}
